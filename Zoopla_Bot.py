@@ -18,9 +18,6 @@ from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 
-client = commands.Bot(command_prefix="!", intents=discord.Intents.all())
-
-
 class MyClient(commands.Bot):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
